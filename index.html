@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#102b50">
+  <title>VII C — Website Kelas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home"><span class="brand-mark">VII<span>C</span></span><span class="brand-copy"><b id="brandName">KELAS VII C</b><small id="brandSub">Bersama, Bertumbuh, Berprestasi</small></span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+  <nav id="mainNav">
+    <a href="#home">Beranda</a><a href="#profil">Profil</a><a href="#akademik">Akademik</a><a href="#berita">Berita</a><a href="#galeri">Galeri</a>
+    <a class="nav-contact" href="#kontak">Hubungi Kami</a>
+  </nav>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="hero-shade"></div><div class="hero-inner">
+      <p class="eyebrow" id="heroEyebrow">WEBSITE RESMI KELAS</p>
+      <h1 id="heroTitle">Satu Kelas.<br><em>Banyak Cerita.</em></h1>
+      <p class="hero-desc" id="heroDesc">Tempat berbagi informasi, karya, dan perjalanan kami dalam belajar dan bertumbuh bersama.</p>
+      <a class="button button-light" href="#profil">Jelajahi Kelas <span>↗</span></a>
+    </div>
+    <div class="hero-caption"><span class="caption-line"></span><span id="heroCaption">KELUARGA BESAR VII C</span></div>
+  </section>
+
+  <section class="quick-strip">
+    <a href="#profil"><span class="quick-no">01</span><span><b>Tentang Kelas</b><small>Kenali kami lebih dekat</small></span><strong>↗</strong></a>
+    <a href="#akademik"><span class="quick-no">02</span><span><b>Informasi Akademik</b><small>Jadwal dan kegiatan belajar</small></span><strong>↗</strong></a>
+    <a href="#berita"><span class="quick-no">03</span><span><b>Kabar Kelas</b><small>Berita dan pengumuman</small></span><strong>↗</strong></a>
+  </section>
+
+  <section class="section intro-section" id="profil">
+    <div class="section-kicker">MENGENAL KAMI <span>01 / PROFIL</span></div>
+    <div class="intro-grid"><div><h2 id="aboutTitle">Belajar bersama,<br><em>melangkah lebih jauh.</em></h2></div>
+      <div><p id="aboutText">Kami adalah keluarga kelas yang tumbuh melalui rasa ingin tahu, kerja sama, dan semangat untuk menjadi lebih baik setiap hari. Website ini menjadi ruang informasi dan dokumentasi perjalanan kelas kami.</p><a class="text-link" href="#kontak">Kenali lebih dekat <span>↗</span></a></div></div>
+    <div class="stats-row"><div><b id="statStudents">28</b><span>Siswa</span></div><div><b id="statAdmins">2</b><span>Administrator</span></div><div><b id="statYear">2026</b><span>Tahun ajaran</span></div></div>
+  </section>
+
+  <section class="section dark-section" id="akademik">
+    <div class="section-kicker light-kicker">KEGIATAN KELAS <span>02 / AKADEMIK</span></div>
+    <div class="section-heading"><h2>Informasi <em>kelas.</em></h2><p id="academicIntro">Temukan informasi penting untuk mendukung kegiatan belajar dan kebersamaan.</p></div>
+    <div class="info-grid">
+      <article class="info-card"><span>01</span><div class="info-icon">▤</div><h3>Jadwal Pelajaran</h3><p>Informasi mata pelajaran dan kegiatan belajar setiap hari.</p><a href="#jadwal">Lihat informasi ↗</a></article>
+      <article class="info-card"><span>02</span><div class="info-icon">◷</div><h3>Jadwal Piket</h3><p>Pembagian tugas untuk menjaga kelas tetap bersih dan nyaman.</p><a href="#piket">Lihat informasi ↗</a></article>
+      <article class="info-card"><span>03</span><div class="info-icon">◈</div><h3>Agenda Kelas</h3><p>Catat kegiatan, acara, dan tanggal penting kelas.</p><a href="#agenda">Lihat informasi ↗</a></article>
+    </div>
+    <div class="schedule-grid">
+      <div id="jadwal"><h3>Jadwal Pelajaran</h3><div id="scheduleContent" class="table-wrap"></div></div>
+      <div id="piket"><h3>Jadwal Piket</h3><div id="dutyContent" class="simple-list"></div></div>
+    </div>
+    <div id="agenda" class="agenda-block"><h3>Agenda Mendatang</h3><div id="agendaContent" class="agenda-list"></div></div>
+  </section>
+
+  <section class="section news-section" id="berita">
+    <div class="section-kicker">KABAR TERKINI <span>03 / BERITA</span></div>
+    <div class="section-heading"><h2>Cerita dan <em>pengumuman.</em></h2><p>Ikuti kabar terbaru dan informasi penting dari kelas kami.</p></div>
+    <div class="news-grid" id="newsGrid"></div>
+  </section>
+
+  <section class="gallery-section" id="galeri">
+    <div class="section gallery-inner"><div class="section-kicker light-kicker">MOMEN KEBERSAMAAN <span>04 / GALERI</span></div><div class="section-heading"><h2>Setiap momen punya <em>cerita.</em></h2><p>Dokumentasi kegiatan dan kenangan kelas.</p></div><div class="gallery-grid" id="galleryGrid"></div></div>
+  </section>
+
+  <section class="section contact-section" id="kontak">
+    <div class="section-kicker">TERHUBUNG DENGAN KAMI <span>05 / KONTAK</span></div>
+    <div class="contact-grid"><div><h2>Ada yang ingin<br><em>disampaikan?</em></h2><p id="contactIntro">Kirim pesan kepada administrator kelas melalui formulir berikut.</p><div class="contact-links"><a id="callLink" href="tel:+620000000000"><span>CALL CENTER</span><b id="callNumber">Atur nomor di admin</b>↗</a><a id="emailLink" href="mailto:admin@example.com"><span>EMAIL ADMIN</span><b id="adminEmail">admin@example.com</b>↗</a></div></div>
+      <form id="messageForm" class="message-form"><label>Nama<input name="name" required maxlength="80" placeholder="Nama kamu"></label><label>Email<input name="email" type="email" required maxlength="120" placeholder="nama@email.com"></label><label>Subjek<input name="subject" required maxlength="120" placeholder="Perihal pesan"></label><label>Pesan<textarea name="message" required maxlength="3000" rows="5" placeholder="Tulis pesan kamu di sini..."></textarea></label><button class="button button-dark" type="submit">Kirim Pesan <span>↗</span></button><p class="form-note" id="formStatus" role="status">Pesan akan diteruskan ke administrator.</p></form>
+    </div>
+  </section>
+</main>
+<footer class="footer"><div class="footer-top"><a class="brand brand-footer" href="#home"><span class="brand-mark">VII<span>C</span></span><span class="brand-copy"><b id="footerName">KELAS VII C</b><small>Bersama, Bertumbuh, Berprestasi</small></span></a><p id="footerQuote">Ruang digital untuk berbagi informasi dan cerita kelas.</p><a href="#home" class="back-top">Kembali ke atas ↑</a></div><div class="footer-bottom"><span id="copyright">© 2026 KELAS VII C</span><span>Dibuat untuk keluarga kelas.</span></div></footer>
+
+<div class="modal" id="articleModal" aria-hidden="true"><div class="modal-panel"><button id="closeModal" class="modal-close" aria-label="Tutup">×</button><img id="modalImage" alt=""><p class="eyebrow" id="modalDate"></p><h2 id="modalTitle"></h2><p id="modalBody"></p></div></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script><script src="app.js"></script>
+</body></html>
